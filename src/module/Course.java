@@ -7,7 +7,7 @@ public class Course {
 	private int creditPoints;
 	private Professor professor;
 	
-	private static long counter = 0;
+	private static long counter = 10000;
 	
 	public long getId() {
 		return id;
@@ -21,7 +21,14 @@ public class Course {
     public Professor getProfessor() {
     	return professor;
     }
-  //  public void 
-    
+     public void setId() {
+    	 id=counter;
+    	 counter ++;
+     }
+     public void setTitle(String inputTitle) {
+    	 if(inputTitle!=null)&& (!inputTitle.isEmpty()) && (inputTitle.matches("[A-Za-z 0-9]{3,100}")){
+    		 title=inputTitle;
+    	 }
+     }
     
 }
