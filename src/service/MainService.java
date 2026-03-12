@@ -1,5 +1,7 @@
 package service;
 import module.Country;
+import module.ProfDegree;
+import module.Professor;
 import module.Student;
 
 public class MainService {
@@ -16,8 +18,10 @@ public class MainService {
 		System.out.println("---------------PROFESSORS----------------------");
 		Professor prof1= new Professor();
 		System.out.println(prof1);
-		Professor prof2= new Professor("Estera" , "Vitola", ProfDegree.master);
+		Professor prof2= new Professor("Estera" , "Vitola",ProfDegree.phd);
 		System.out.println(prof2);
+		Professor prof3= new Professor(" %$#%#@$3" , "245326", null);
+		System.out.println(prof3);
 	}
 
 }

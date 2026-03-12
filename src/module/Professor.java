@@ -51,7 +51,10 @@ public class Professor {
 	}
 	public void setDegree(ProfDegree inputDegree) {
 		if (inputDegree !=null) {
-			degree = ProfDegree.unknown;
+			degree = inputDegree;
+		}
+		else {
+			degree =  ProfDegree.unknown;
 		}
 	}
 	
@@ -69,7 +72,7 @@ public class Professor {
 		
 	}
 	public String toString() {
-	 	String result =id  + " :" + name +  " " + surname + String result =id + ":" + name +  " " + surname +  " (" + degree + ")";
+	 	String result =id  + " :" + name +  " " + surname  +  " (" + degree + ")";
 	 	return result;
 	}
    }
